@@ -1,4 +1,4 @@
-@import url(/css/reset.css);
+@import url(./css/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
@@ -28,7 +28,7 @@ body{
 	padding-right: calc( (100% - var(--container-width)) / 2 + var(--container-padding));
 }
 
-									/*Header*/
+/* Header */
 header{
 	position: relative;
 	min-height: 945px;
@@ -297,4 +297,66 @@ header{
 
 	padding-right: 26px;
 	justify-content: flex-end;
+}
+
+/* Customers */
+
+.customers {
+	padding: 100px 0 133px;
+}
+
+.customers__row {
+	display: flex;
+	column-gap: 68px;
+}
+.customers__img {
+	max-width: 478px;
+}
+.customers__img img{
+	border-radius: 60px;
+}
+.customers__title {
+	font-size: 45px;
+	font-weight: 500;
+	color: #0F1F1C;
+	margin-bottom: 35px;
+}
+
+/* Review */
+
+.review{
+	max-width: 490px;
+}
+.review__client {
+	display: flex;
+	align-items: center;
+	column-gap: 33px;
+	margin-bottom: 60px;
+}
+.review__client-avatar {
+	overflow: hidden;
+	width: 134px;
+	height: 134px;
+	border-radius: 50%;
+	background-color: #FF7C4E;
+}
+
+.nreview__client-desc-name {
+	font-size: 33px;
+	font-weight: 500;
+	color: #0F1F1C;
+}
+.nreview__client-desc-country {
+	font-size: 25px;
+	font-weight: 400;
+
+}
+.review__text {
+	margin-bottom: 30px;
+	font-family: Poppins;
+	font-size: 22px;
+	font-weight: 500;
+}
+.review__rating {
+
 }
