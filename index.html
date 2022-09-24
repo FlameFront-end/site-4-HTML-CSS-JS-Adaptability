@@ -5,8 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Travel project</title>
-		<link rel="stylesheet" href="/css/reset.css">
 		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+			integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<header class="header">
@@ -23,7 +30,7 @@
 							<li><a href="#!">Contact</a></li>
 						</ul>
 						<ul class="nav__login">
-							<li><a href="#!" class="sign_header" >Sign up</a></li>
+							<li><a href="#!" class="sign_header">Sign up</a></li>
 							<li><a href="#!" class="btn_header">Login</a></li>
 						</ul>
 					</nav>
@@ -63,10 +70,28 @@
 								<a href="#!" class="btn">Exsplore Now</a>
 							</div>
 							<div class="destinations__slider">
+								<div class="owl-carousel">
+									<div class="slider">
+										<img class="slider__item" src="/image/slider/s1.png" alt="">
+										<img class="slider__item active" src="/image/slider/s2.png" alt="">
+										<img class="slider__item" src="/image/slider/s3.png" alt="">
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-			</main>
-		</body>
-	</html>
+				</div>
+			</section>
+		</main>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+			integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="/js.js"></script>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
