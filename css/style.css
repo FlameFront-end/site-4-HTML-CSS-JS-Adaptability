@@ -31,10 +31,11 @@ body{
 									/*Header*/
 header{
 	position: relative;
-min-height: 945px;
-background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
-padding-top: 44px;
-color: #FFF;
+	min-height: 945px;
+	background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+	padding-top: 44px;
+	color: #FFF;
+	overflow: hidden;
 }
 .header::after{
 	content: '';
@@ -49,6 +50,24 @@ color: #FFF;
 }
 .header__content{
 	max-width: 592px;
+	position: relative;
+	z-index: 5;
+}
+.header__row{
+	display: flex;
+}
+.header__img img{
+	position: absolute;
+	top: -107px;
+	right: -87px;
+
+	max-width: unset;
+	width: 894px;
+	height: 940px;
+}
+.header__img{
+	position: relative;
+	flex-grow: 1;
 }
 
 /* NAV */
@@ -57,6 +76,8 @@ color: #FFF;
 	justify-content: space-between;
 	column-gap: 80px;
 	align-items: center;
+	position: relative;
+	z-index: 1;
 }
 .logo{
 	font-family: 'Poppins';
@@ -76,6 +97,11 @@ color: #FFF;
 }
 .nav__list a{
 	position: relative;
+}
+.nav__list a:hover, .nav__logo a:hover{
+	position: relative;
+	top: 1px;
+	color: #C4C4C4;
 }
 .nav__list a.active::after,
 .nav__list a:hover::after{
@@ -100,13 +126,113 @@ color: #FFF;
 }
 
 /* Button */
-.btn{
+.btn_header{
 	display: inline-block;
 	padding: 13px 44px;
 	color: #FFF;
 
 	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
 	border-radius: 100px;
+}
+.btn_header:hover{
+	color: rgb(114, 43, 2);
+	transition: color 0.2;
+}
+.btn_header:active{
+	position: relative;
+	top: 1px;
+}
+.sign_header:hover{
+	position: relative;
+	top: 1px;
+	color: #C4C4C4;
+}
+/*Header-content*/
+.header__badge{
+	margin-top: 95px;
+	display: inline-block;
+	padding: 11px 30px;
+	font-size: 18px;
+	font-weight: 500;
+
+	background: rgba(255, 255, 255, 0.25);
+	border-radius: 15px;
+}
+.header__title{
+	margin-top: 30px;
+	font-size: 55px;
+	font-weight: 400;	
+}
+.header__text{
+	margin-bottom: 68px;
+	font-size: 25px;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 0.5);
+}
+.header__btn{
+	font-weight: 600;
+	font-size: 25px;
+
+	display: inline-block;
+	padding: 27px 48px;
+	color: #FFF;
+
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+	border-radius: 27px;
+}
+.header__btn:hover{
+	color: rgb(114, 43, 2);
+	transition: color 0.2;
+}
+.header__btn:active{
+	position: relative;
+	top: 1px;
+}
+
+/* Destinations */
+
+.destinations{
+	padding: 96px 0 100px;
+	overflow-x: hidden;
+}
+.destinations__row{
+	display: flex;
+	column-gap: 50px;
+}
+.destinations__content{
+	max-width: 456px;
+}
+.destinations__slider{
+	width: 1110px;
+	flex-shrink: 0;
+}
+.destinations__title {
+	margin-bottom: 15px;
+	font-size: 55px;
+	font-weight: 600;
+	color: #0F1F1C;
+}
+.destinations__title span{
+	font-size: 30px;
+	font-weight: 600;
+	color: #0F1F1C;
+	margin-bottom: 60px;
+}
+.destinations__text {
+	margin-bottom: 60px;
+	font-size: 25px;
+	font-weight: 500;
+}
+.btn {
+	font-size: 20px;
+	font-weight: 600;
+	color: #FEFEFE;
+
+	display: inline-block;
+	padding: 25px 45px;
+
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+	border-radius: 27px;
 }
 .btn:hover{
 	color: rgb(114, 43, 2);
