@@ -246,6 +246,7 @@ header{
 /* Slider */
 .slider{
 	position: relative;
+	height: 456px;
 }
 
 .slider__item {
@@ -272,6 +273,10 @@ header{
 	height: 68px;
 	border-radius: 50%;
 	display: flex;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
 
 	padding-left: 26px;
 	align-items: center;
@@ -282,21 +287,13 @@ header{
 	transition: color 0.2;
 }
 .slider__btn--prev{
-	position: absolute;
 	left: -27px;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 9;
 
 	padding-left: 26px;
 	justify-content: flex-start;
 }
 .slider__btn--next{
-	position: absolute;
 	right: 150px;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 9;
 
 	padding-right: 26px;
 	justify-content: flex-end;
